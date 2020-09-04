@@ -112,4 +112,12 @@ class Passcontrolller extends CI_Controller {
 
 
 
-'''
+```
+## Esacpe Sql injection
+	
+```php
+	
+		$val1 = $this->db->escape($val1);
+$this->db->query("SELECT * FROM tablename WHERE var=$val1");
+
+```
